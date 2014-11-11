@@ -15,6 +15,7 @@
 		655C22571A118E7C00A0426C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655C22561A118E7C00A0426C /* Images.xcassets */; };
 		655C225A1A118E7C00A0426C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655C22581A118E7C00A0426C /* LaunchScreen.xib */; };
 		655C22661A118E7C00A0426C /* ninzyaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 655C22651A118E7C00A0426C /* ninzyaTests.m */; };
+		65B6EE901A11935A00258DEF /* stopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6EE8F1A11935A00258DEF /* stopWatchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		655C225F1A118E7C00A0426C /* ninzyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ninzyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		655C22641A118E7C00A0426C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		655C22651A118E7C00A0426C /* ninzyaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ninzyaTests.m; sourceTree = "<group>"; };
+		65B6EE8E1A11935A00258DEF /* stopWatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stopWatchViewController.h; path = ../stopWatchViewController.h; sourceTree = "<group>"; };
+		65B6EE8F1A11935A00258DEF /* stopWatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = stopWatchViewController.m; path = ../stopWatchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				655C224B1A118E7C00A0426C /* AppDelegate.m */,
 				655C22501A118E7C00A0426C /* ViewController.h */,
 				655C22511A118E7C00A0426C /* ViewController.m */,
+				65B6EE8E1A11935A00258DEF /* stopWatchViewController.h */,
+				65B6EE8F1A11935A00258DEF /* stopWatchViewController.m */,
 				655C22531A118E7C00A0426C /* Main.storyboard */,
 				655C22561A118E7C00A0426C /* Images.xcassets */,
 				655C22581A118E7C00A0426C /* LaunchScreen.xib */,
@@ -226,6 +231,7 @@
 				655C22491A118E7C00A0426C /* main.m in Sources */,
 				655C22521A118E7C00A0426C /* ViewController.m in Sources */,
 				655C224F1A118E7C00A0426C /* ninzya.xcdatamodeld in Sources */,
+				65B6EE901A11935A00258DEF /* stopWatchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 				655C226B1A118E7C00A0426C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		655C226C1A118E7C00A0426C /* Build configuration list for PBXNativeTarget "ninzyaTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				655C226E1A118E7C00A0426C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
