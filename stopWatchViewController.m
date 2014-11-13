@@ -43,8 +43,8 @@
 }
 
 
-- (void)dealloc {
-    [super  dealloc];
-}
+//- (void)dealloc {
+//    [super  dealloc];
+//}
 
 @end
