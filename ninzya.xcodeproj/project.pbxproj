@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		651C5F8C1A12F0A800E48DEF /* KinsetuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 651C5F8B1A12F0A800E48DEF /* KinsetuViewController.m */; };
 		651C5F8E1A12F1F200E48DEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651C5F8D1A12F1F200E48DEF /* UIKit.framework */; };
 		651C5F901A12F20200E48DEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651C5F8F1A12F20200E48DEF /* AVFoundation.framework */; };
 		651C5F921A12F21000E48DEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651C5F911A12F21000E48DEF /* AudioToolbox.framework */; };
@@ -19,7 +18,9 @@
 		655C22571A118E7C00A0426C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655C22561A118E7C00A0426C /* Images.xcassets */; };
 		655C225A1A118E7C00A0426C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655C22581A118E7C00A0426C /* LaunchScreen.xib */; };
 		655C22661A118E7C00A0426C /* ninzyaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 655C22651A118E7C00A0426C /* ninzyaTests.m */; };
-		65B6EE901A11935A00258DEF /* stopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6EE8F1A11935A00258DEF /* stopWatchViewController.m */; };
+		65953A7D1A159EA800433005 /* syokyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A7C1A159EA800433005 /* syokyuViewController.m */; };
+		65953A801A159ECD00433005 /* tyu-kyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A7F1A159ECD00433005 /* tyu-kyuViewController.m */; };
+		65953A831A159EDF00433005 /* zyo-kyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A821A159EDF00433005 /* zyo-kyuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		651C5F8A1A12F0A800E48DEF /* KinsetuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinsetuViewController.h; sourceTree = "<group>"; };
-		651C5F8B1A12F0A800E48DEF /* KinsetuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinsetuViewController.m; sourceTree = "<group>"; };
 		651C5F8D1A12F1F200E48DEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		651C5F8F1A12F20200E48DEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		651C5F911A12F21000E48DEF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -52,8 +51,12 @@
 		655C225F1A118E7C00A0426C /* ninzyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ninzyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		655C22641A118E7C00A0426C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		655C22651A118E7C00A0426C /* ninzyaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ninzyaTests.m; sourceTree = "<group>"; };
-		65B6EE8E1A11935A00258DEF /* stopWatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stopWatchViewController.h; path = ../stopWatchViewController.h; sourceTree = "<group>"; };
-		65B6EE8F1A11935A00258DEF /* stopWatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = stopWatchViewController.m; path = ../stopWatchViewController.m; sourceTree = "<group>"; };
+		65953A7B1A159EA800433005 /* syokyuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syokyuViewController.h; sourceTree = "<group>"; };
+		65953A7C1A159EA800433005 /* syokyuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = syokyuViewController.m; sourceTree = "<group>"; };
+		65953A7E1A159ECD00433005 /* tyu-kyuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tyu-kyuViewController.h"; sourceTree = "<group>"; };
+		65953A7F1A159ECD00433005 /* tyu-kyuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "tyu-kyuViewController.m"; sourceTree = "<group>"; };
+		65953A811A159EDF00433005 /* zyo-kyuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "zyo-kyuViewController.h"; sourceTree = "<group>"; };
+		65953A821A159EDF00433005 /* zyo-kyuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "zyo-kyuViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +108,12 @@
 				655C224B1A118E7C00A0426C /* AppDelegate.m */,
 				655C22501A118E7C00A0426C /* ViewController.h */,
 				655C22511A118E7C00A0426C /* ViewController.m */,
-				65B6EE8E1A11935A00258DEF /* stopWatchViewController.h */,
-				65B6EE8F1A11935A00258DEF /* stopWatchViewController.m */,
-				651C5F8A1A12F0A800E48DEF /* KinsetuViewController.h */,
-				651C5F8B1A12F0A800E48DEF /* KinsetuViewController.m */,
+				65953A7B1A159EA800433005 /* syokyuViewController.h */,
+				65953A7C1A159EA800433005 /* syokyuViewController.m */,
+				65953A7E1A159ECD00433005 /* tyu-kyuViewController.h */,
+				65953A7F1A159ECD00433005 /* tyu-kyuViewController.m */,
+				65953A811A159EDF00433005 /* zyo-kyuViewController.h */,
+				65953A821A159EDF00433005 /* zyo-kyuViewController.m */,
 				655C22531A118E7C00A0426C /* Main.storyboard */,
 				655C22561A118E7C00A0426C /* Images.xcassets */,
 				655C22581A118E7C00A0426C /* LaunchScreen.xib */,
@@ -245,11 +250,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				655C224C1A118E7C00A0426C /* AppDelegate.m in Sources */,
+				65953A831A159EDF00433005 /* zyo-kyuViewController.m in Sources */,
+				65953A801A159ECD00433005 /* tyu-kyuViewController.m in Sources */,
 				655C22491A118E7C00A0426C /* main.m in Sources */,
+				65953A7D1A159EA800433005 /* syokyuViewController.m in Sources */,
 				655C22521A118E7C00A0426C /* ViewController.m in Sources */,
 				655C224F1A118E7C00A0426C /* ninzya.xcdatamodeld in Sources */,
-				651C5F8C1A12F0A800E48DEF /* KinsetuViewController.m in Sources */,
-				65B6EE901A11935A00258DEF /* stopWatchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
