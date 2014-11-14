@@ -94,18 +94,19 @@
 
 -(void)hogeMethod{
     
-    
     i++;
     NSLog(@"%d",i);
     self.countLabel.text = [NSString stringWithFormat:@"%d",i];
-    
-    for( p = 1; p <= 100; p++){
-        if (p % 5 == 0){
-            self.countLabel.text = [NSString stringWithFormat:@"%d",p];
+}
+-(void)point{
 
+   p++;
+   i = p % 5;
+   NSLog(@"%d",p);
+   self.countLabel.text = [NSString stringWithFormat:@"%d",p];
         }
-}
-}
+
+
 @end
 
 
