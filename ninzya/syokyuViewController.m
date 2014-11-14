@@ -97,12 +97,12 @@
     i++;
     NSLog(@"%d",i);
     self.countLabel.text = [NSString stringWithFormat:@"%d",i];
+    [self point];
 }
 -(void)point{
 
-   p++;
-   i = p % 5;
-   NSLog(@"%d",p);
+    p = i / 5;
+   NSLog(@"ポイントは%d",p);
    self.countLabel.text = [NSString stringWithFormat:@"%d",p];
         }
 
