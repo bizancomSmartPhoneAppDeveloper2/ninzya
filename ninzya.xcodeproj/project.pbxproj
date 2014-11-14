@@ -21,6 +21,7 @@
 		65953A7D1A159EA800433005 /* syokyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A7C1A159EA800433005 /* syokyuViewController.m */; };
 		65953A801A159ECD00433005 /* tyu-kyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A7F1A159ECD00433005 /* tyu-kyuViewController.m */; };
 		65953A831A159EDF00433005 /* zyo-kyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A821A159EDF00433005 /* zyo-kyuViewController.m */; };
+		65953A861A15C20D00433005 /* seikouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A851A15C20D00433005 /* seikouViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		65953A7F1A159ECD00433005 /* tyu-kyuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "tyu-kyuViewController.m"; sourceTree = "<group>"; };
 		65953A811A159EDF00433005 /* zyo-kyuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "zyo-kyuViewController.h"; sourceTree = "<group>"; };
 		65953A821A159EDF00433005 /* zyo-kyuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "zyo-kyuViewController.m"; sourceTree = "<group>"; };
+		65953A841A15C20D00433005 /* seikouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seikouViewController.h; sourceTree = "<group>"; };
+		65953A851A15C20D00433005 /* seikouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = seikouViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				65953A7F1A159ECD00433005 /* tyu-kyuViewController.m */,
 				65953A811A159EDF00433005 /* zyo-kyuViewController.h */,
 				65953A821A159EDF00433005 /* zyo-kyuViewController.m */,
+				65953A841A15C20D00433005 /* seikouViewController.h */,
+				65953A851A15C20D00433005 /* seikouViewController.m */,
 				655C22531A118E7C00A0426C /* Main.storyboard */,
 				655C22561A118E7C00A0426C /* Images.xcassets */,
 				655C22581A118E7C00A0426C /* LaunchScreen.xib */,
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65953A861A15C20D00433005 /* seikouViewController.m in Sources */,
 				655C224C1A118E7C00A0426C /* AppDelegate.m in Sources */,
 				65953A831A159EDF00433005 /* zyo-kyuViewController.m in Sources */,
 				65953A801A159ECD00433005 /* tyu-kyuViewController.m in Sources */,

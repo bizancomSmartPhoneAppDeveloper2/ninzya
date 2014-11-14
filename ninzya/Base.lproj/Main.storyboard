@@ -72,12 +72,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="０" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6P2-m1-1fi">
-                                <rect key="frame" x="247" y="20" width="57" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="０" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-Hf-Lis">
                                 <rect key="frame" x="247" y="57" width="57" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -95,6 +89,12 @@
                                     <segue destination="qlD-wp-RGk" kind="show" id="lf1-HE-vgm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="０" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6P2-m1-1fi">
+                                <rect key="frame" x="247" y="24" width="57" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="1638" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--Seikou View Controller-->
         <scene sceneID="ujd-8t-2PX">
             <objects>
-                <viewController id="0k1-b6-mHp" sceneMemberID="viewController">
+                <viewController id="0k1-b6-mHp" customClass="seikouViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G9I-Vj-1aO"/>
                         <viewControllerLayoutGuide type="bottom" id="Cqa-5M-2FT"/>

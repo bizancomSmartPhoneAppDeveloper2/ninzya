@@ -99,9 +99,13 @@
     NSLog(@"%d",i);
     self.countLabel.text = [NSString stringWithFormat:@"%d",i];
     
-    p = 1;
-    p++;
-    NSLog(@"%d",p%5);
-    self.pointup.text = [NSString stringWithFormat:@"%d",p];
+    for( p = 1; p <= 100; p++){
+        if (p % 5 == 0){
+            self.countLabel.text = [NSString stringWithFormat:@"%d",p];
+
+        }
+}
 }
 @end
+
+
