@@ -20,6 +20,11 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+@property int point;
+@property int time;
+@property NSMutableArray *nowProject;
+@property NSMutableArray *finishProject;
+
 
 @end
 

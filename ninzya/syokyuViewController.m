@@ -22,13 +22,13 @@
     int i;
     int p;
     NSTimer *tm;
+    AppDelegate *app; //変数管理
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    
+    app = [[UIApplication sharedApplication] delegate]; //変数管理のデリゲート
+
     // 近接センサをONに
     
     // 近接センサをオン
@@ -39,6 +39,10 @@
                                              selector:@selector(proximitySensorStateDidchange:)
                                                  name:UIDeviceProximityStateDidChangeNotification
                                                object:nil];
+    //時給を変数に入れる
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSNumber *num = [defaults objectForKey:@"経過時間"];
+    app.point = [num intValue];
     
 }
 
@@ -60,6 +64,8 @@
     {
         //止まるメソッド
         isVibe = NO;
+        app.point = p;
+        app.time = i;
         [myTimer invalidate];
         [self.mySound stop];
         [tm invalidate];
@@ -107,6 +113,13 @@
     p = i / 60;
    NSLog(@"ポイントは%d",p);
    self.countLabel.text = [NSString stringWithFormat:@"%d",p];
+        }
+-(void)defaultClear{
+    
+     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+     NSNumber *num = [NSNumber numberWithInt:app.point];
+     [defaults setObject:num forKey:@"経過時間"];
+    
         }
 
 
