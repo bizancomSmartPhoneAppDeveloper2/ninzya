@@ -103,7 +103,7 @@
                     <connections>
                         <outlet property="countLabel" destination="6P2-m1-1fi" id="4r5-XA-RIw"/>
                         <outlet property="pointup" destination="hVC-Hf-Lis" id="wE6-Ly-GRG"/>
-                        <segue destination="0k1-b6-mHp" kind="modal" id="ao4-0f-jGX"/>
+                        <segue destination="0k1-b6-mHp" kind="modal" id="lnG-TX-6Uc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4PN-Gw-UVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -172,7 +172,7 @@
         <!--Seikou View Controller-->
         <scene sceneID="ujd-8t-2PX">
             <objects>
-                <viewController id="0k1-b6-mHp" customClass="seikouViewController" sceneMemberID="viewController">
+                <viewController id="0k1-b6-mHp" customClass="seikouViewController" customModule="sucsesssegue" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G9I-Vj-1aO"/>
                         <viewControllerLayoutGuide type="bottom" id="Cqa-5M-2FT"/>
