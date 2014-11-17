@@ -207,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="2151" y="-309"/>
         </scene>
-        <!--View Controller-->
+        <!--Item View Controller-->
         <scene sceneID="jLk-ie-kv1">
             <objects>
-                <viewController id="qlD-wp-RGk" sceneMemberID="viewController">
+                <viewController id="qlD-wp-RGk" customClass="itemViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a8S-OD-TvT"/>
                         <viewControllerLayoutGuide type="bottom" id="Pxa-d8-7wc"/>
@@ -235,6 +235,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonFadeInOut:" destination="qlD-wp-RGk" eventType="touchUpInside" id="Jd7-6y-taB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH2-iX-g2W">
                                 <rect key="frame" x="120" y="329" width="80" height="230"/>
@@ -242,6 +245,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonFadeInOut2:" destination="qlD-wp-RGk" eventType="touchUpInside" id="bfO-vP-doq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTK-hG-OhZ">
                                 <rect key="frame" x="217" y="329" width="80" height="230"/>
@@ -249,6 +255,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonFadeInOut3:" destination="qlD-wp-RGk" eventType="touchUpInside" id="0Cm-Xd-7na"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMG-KY-Sq3">
                                 <rect key="frame" x="40" y="72" width="240" height="193"/>
@@ -257,6 +266,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="sampleButton" destination="Cbs-ET-DUD" id="3IH-rr-O42"/>
+                        <outlet property="sampleButton2" destination="DH2-iX-g2W" id="neE-X1-0pR"/>
+                        <outlet property="sampleButton3" destination="xTK-hG-OhZ" id="pdD-Qi-bR6"/>
+                        <outlet property="sampleImageView" destination="hMG-KY-Sq3" id="BcW-Nj-yex"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKE-Ty-zKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -516,8 +531,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0u7-kT-zug"/>
         <segue reference="USy-Xo-cid"/>
-        <segue reference="qlu-nI-0tx"/>
+        <segue reference="0u7-kT-zug"/>
+        <segue reference="Rf5-Uu-pYI"/>
     </inferredMetricsTieBreakers>
 </document>

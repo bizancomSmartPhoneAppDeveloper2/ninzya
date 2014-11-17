@@ -18,6 +18,8 @@
 		655C22571A118E7C00A0426C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655C22561A118E7C00A0426C /* Images.xcassets */; };
 		655C225A1A118E7C00A0426C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655C22581A118E7C00A0426C /* LaunchScreen.xib */; };
 		655C22661A118E7C00A0426C /* ninzyaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 655C22651A118E7C00A0426C /* ninzyaTests.m */; };
+		657E145D1A19A3E000351B5D /* itemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657E145C1A19A3E000351B5D /* itemViewController.m */; };
+		657E145F1A19A90900351B5D /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 657E145E1A19A90900351B5D /* images.jpg */; };
 		65953A7D1A159EA800433005 /* syokyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A7C1A159EA800433005 /* syokyuViewController.m */; };
 		65953A801A159ECD00433005 /* tyu-kyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A7F1A159ECD00433005 /* tyu-kyuViewController.m */; };
 		65953A831A159EDF00433005 /* zyo-kyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65953A821A159EDF00433005 /* zyo-kyuViewController.m */; };
@@ -52,6 +54,9 @@
 		655C225F1A118E7C00A0426C /* ninzyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ninzyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		655C22641A118E7C00A0426C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		655C22651A118E7C00A0426C /* ninzyaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ninzyaTests.m; sourceTree = "<group>"; };
+		657E145B1A19A3E000351B5D /* itemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemViewController.h; sourceTree = "<group>"; };
+		657E145C1A19A3E000351B5D /* itemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = itemViewController.m; sourceTree = "<group>"; };
+		657E145E1A19A90900351B5D /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
 		65953A7B1A159EA800433005 /* syokyuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syokyuViewController.h; sourceTree = "<group>"; };
 		65953A7C1A159EA800433005 /* syokyuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = syokyuViewController.m; sourceTree = "<group>"; };
 		65953A7E1A159ECD00433005 /* tyu-kyuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tyu-kyuViewController.h"; sourceTree = "<group>"; };
@@ -119,6 +124,8 @@
 				65953A821A159EDF00433005 /* zyo-kyuViewController.m */,
 				65953A841A15C20D00433005 /* seikouViewController.h */,
 				65953A851A15C20D00433005 /* seikouViewController.m */,
+				657E145B1A19A3E000351B5D /* itemViewController.h */,
+				657E145C1A19A3E000351B5D /* itemViewController.m */,
 				655C22531A118E7C00A0426C /* Main.storyboard */,
 				655C22561A118E7C00A0426C /* Images.xcassets */,
 				655C22581A118E7C00A0426C /* LaunchScreen.xib */,
@@ -131,6 +138,7 @@
 		655C22461A118E7C00A0426C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				657E145E1A19A90900351B5D /* images.jpg */,
 				655C22471A118E7C00A0426C /* Info.plist */,
 				655C22481A118E7C00A0426C /* main.m */,
 			);
@@ -237,6 +245,7 @@
 				655C22551A118E7C00A0426C /* Main.storyboard in Resources */,
 				655C225A1A118E7C00A0426C /* LaunchScreen.xib in Resources */,
 				655C22571A118E7C00A0426C /* Images.xcassets in Resources */,
+				657E145F1A19A90900351B5D /* images.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65953A861A15C20D00433005 /* seikouViewController.m in Sources */,
+				657E145D1A19A3E000351B5D /* itemViewController.m in Sources */,
 				655C224C1A118E7C00A0426C /* AppDelegate.m in Sources */,
 				65953A831A159EDF00433005 /* zyo-kyuViewController.m in Sources */,
 				65953A801A159ECD00433005 /* tyu-kyuViewController.m in Sources */,

@@ -67,8 +67,10 @@
         app.point = p;
         app.time = i;
         [myTimer invalidate];
+        myTimer = nil;
         [self.mySound stop];
         [tm invalidate];
+        tm = nil;
     }
 }
 
