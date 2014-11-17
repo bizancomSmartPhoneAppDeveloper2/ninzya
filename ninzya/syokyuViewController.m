@@ -27,7 +27,7 @@
 }
 
 - (void)viewDidLoad {
-    array = [NSArray arrayWithObjects:@"1",@"1", @"1",@"0",nil];
+    array = [NSArray arrayWithObjects:@"1",@"1", @"0",@"0",nil];
     NSString *kekka = [array objectAtIndex:arc4random()%[array count]];
     [super viewDidLoad];
     app = [[UIApplication sharedApplication] delegate]; //変数管理のデリゲート
@@ -74,6 +74,14 @@
         [self.mySound stop];
         [tm invalidate];
         tm = nil;
+         NSString *kekka = [array objectAtIndex:arc4random()%[array count]];
+        if ([kekka isEqualToString:@"1"]) {
+            //成功のとき
+            [self performSegueWithIdentifier:@"sucsesssegue" sender:self];
+        }else{
+            //失敗のとき
+            [self performSegueWithIdentifier:@"failsegue" sender:self];
+        }
     }
 }
 
@@ -93,14 +101,7 @@
     // 近接センサ監視解除
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIDeviceProximityStateDidChangeNotification                                                  object:nil];
-    NSString *kekka = [array objectAtIndex:arc4random()%[array count]];
-    if ([kekka isEqualToString:@"1"]) {
-        //成功のとき
-        [self performSegueWithIdentifier:@"sucsesssegue" sender:self];
-    }else{
-        //失敗のとき
-        [self performSegueWithIdentifier:@"failsegue" sender:self];
-    }
+   
 }
 
 -(void)soundstart{
@@ -125,7 +126,7 @@
 
     p = i / 60;
    NSLog(@"ポイントは%d",p);
-   self.countLabel.text = [NSString stringWithFormat:@"%d",p];
+   self.pointup.text = [NSString stringWithFormat:@"%d",p];
         }
 -(void)defaultClear{
     
