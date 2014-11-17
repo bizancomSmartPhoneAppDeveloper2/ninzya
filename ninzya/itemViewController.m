@@ -30,7 +30,7 @@
     }
     
     - (IBAction)buttonFadeInOut:(id)sender {
-        if (isFadeIn) {
+        if ([_sampleButton.titleLabel.text isEqualToString:@"使う"]) {
             //画像を表示する
             self.sampleImageView.image = [UIImage imageNamed:@"images.jpg"];
             //フェードイン
@@ -50,30 +50,20 @@
             [_sampleButton2 setTitle:@"使う" forState:UIControlStateNormal];
             [_sampleButton3 setTitle:@"使う" forState:UIControlStateNormal];
             
-        } else {
-            //フェードアウト
-            [UIView beginAnimations:@"戻る" context:nil];
-            //イージング指定
-            [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-            //アニメーション秒数を指定
-            [UIView setAnimationDuration:0.15];
-            //目標のアルファ値を指定
-            _sampleImageView.alpha = 0;
-            //アニメーション実行
-            [UIView commitAnimations];
             
-            //ボタンのテキストを変更
-            [_sampleButton setTitle:@"使う" forState:UIControlStateNormal];
+            //画像を隠す
+            self.sampleImageView.hidden =NO;
+            
+        }else{
+            self.sampleImageView.hidden = YES;
+            [self.sampleButton  setTitle:@"使う" forState:UIControlStateNormal];
         }
-        isFadeIn = !isFadeIn;
-        //画像を隠す
-        self.sampleImageView.hidden =NO;
     }
     
     - (IBAction)buttonFadeInOut2:(id)sender {
-        if (isFadeIn2) {
+         if ([_sampleButton2.titleLabel.text isEqualToString:@"使う"]) {
             //画像を表示する
-            self.sampleImageView.image = [UIImage imageNamed:@"images-33"];
+            self.sampleImageView.image = [UIImage imageNamed:@"images-2.jpg"];
             //フェードイン
             _sampleImageView.alpha = 0;
             //アニメーションのタイプを指定
@@ -90,30 +80,18 @@
             [_sampleButton2 setTitle:@"戻る" forState:UIControlStateNormal];
             [_sampleButton setTitle:@"使う" forState:UIControlStateNormal];
             [_sampleButton3 setTitle:@"使う" forState:UIControlStateNormal];
-        } else {
-            //フェードアウト
-            [UIView beginAnimations:@"戻る" context:nil];
-            //イージング指定
-            [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-            //アニメーション秒数を指定
-            [UIView setAnimationDuration:0.15];
-            //目標のアルファ値を指定
-            _sampleImageView.alpha = 0;
-            //アニメーション実行
-            [UIView commitAnimations];
-            
-            //ボタンのテキストを変更
-            [_sampleButton2 setTitle:@"使う" forState:UIControlStateNormal];
-        }
-        isFadeIn2 = !isFadeIn2;
-        //画像を隠す
+
         self.sampleImageView.hidden =NO;
+         }
+         else{
+             self.sampleImageView.hidden = YES;
+             [self.sampleButton2  setTitle:@"使う" forState:UIControlStateNormal];
+         }
     }
     - (IBAction)buttonFadeInOut3:(id)sender {
-        if (isFadeIn3
-            ) {
+        if ([_sampleButton3.titleLabel.text isEqualToString:@"使う"]) {
             //画像を表示する
-            self.sampleImageView.image = [UIImage imageNamed:@"images-52"];
+            self.sampleImageView.image = [UIImage imageNamed:@"images-1.jpg"];
             //フェードイン
             _sampleImageView.alpha = 0;
             //アニメーションのタイプを指定
@@ -130,24 +108,11 @@
             [_sampleButton3 setTitle:@"戻る" forState:UIControlStateNormal];
             [_sampleButton2 setTitle:@"使う" forState:UIControlStateNormal];
             [_sampleButton setTitle:@"使う" forState:UIControlStateNormal];
-        } else {
-            //フェードアウト
-            [UIView beginAnimations:@"戻る" context:nil];
-            //イージング指定
-            [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-            //アニメーション秒数を指定
-            [UIView setAnimationDuration:0.15];
-            //目標のアルファ値を指定
-            _sampleImageView.alpha = 0;
-            //アニメーション実行
-            [UIView commitAnimations];
-            
-            //ボタンのテキストを変更
-            [_sampleButton3 setTitle:@"使う" forState:UIControlStateNormal];
-        }
-        isFadeIn3 = !isFadeIn3;
-        //画像を隠す
         self.sampleImageView.hidden =NO;
+        }else{
+            self.sampleImageView.hidden = YES;
+            [self.sampleButton3  setTitle:@"使う" forState:UIControlStateNormal];
+        }
     }
 
 @end

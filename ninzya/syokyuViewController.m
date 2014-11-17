@@ -119,8 +119,10 @@
 -(void)defaultClear{
     
      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-     NSNumber *num = [NSNumber numberWithInt:app.point];
+     NSNumber *num = [NSNumber numberWithInt:app.time];
      [defaults setObject:num forKey:@"経過時間"];
+    num = [NSNumber numberWithInt:app.point];
+    [defaults setObject:num forKey:@"ポイント"];
     
         }
 
