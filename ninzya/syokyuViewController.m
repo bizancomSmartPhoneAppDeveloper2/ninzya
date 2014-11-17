@@ -27,6 +27,8 @@
 }
 
 - (void)viewDidLoad {
+    i = 0;
+    p = 0;
     array = [NSArray arrayWithObjects:@"1",@"1", @"0",@"0",nil];
     NSString *kekka = [array objectAtIndex:arc4random()%[array count]];
     [super viewDidLoad];
@@ -76,9 +78,6 @@
         tm = nil;
          NSString *kekka = [array objectAtIndex:arc4random()%[array count]];
         if ([kekka isEqualToString:@"1"]) {
-            //成功のとき
-            [self performSegueWithIdentifier:@"sucsesssegue" sender:self];
-        }else{
             //失敗のとき
             [self performSegueWithIdentifier:@"failsegue" sender:self];
         }
@@ -113,18 +112,24 @@
 }
 
 -(void)hogeMethod{
-    
+    if (app.time > 0) {
+        i = app.time;
+    }
     i++;
     NSLog(@"%d",i);
+    app.time = i;
     self.countLabel.text = [NSString stringWithFormat:@"%d",i];
-    if (i >= 120) {
+    if (i >= 30) {
         [self performSegueWithIdentifier:@"sucsesssegue" sender:self];
     }
     [self point];
 }
 -(void)point{
-
-    p = i / 60;
+    if (app.point > 0) {
+        p = app.point;
+    }
+    p = i / 2;
+    app.point = p;
    NSLog(@"ポイントは%d",p);
    self.pointup.text = [NSString stringWithFormat:@"%d",p];
         }
