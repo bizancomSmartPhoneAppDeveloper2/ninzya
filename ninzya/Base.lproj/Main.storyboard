@@ -229,18 +229,8 @@
                                     <segue destination="GnH-TG-hrw" kind="show" id="Rf5-Uu-pYI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-ET-DUD">
-                                <rect key="frame" x="16" y="328" width="80" height="232"/>
-                                <state key="normal" title="使う">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonFadeInOut:" destination="qlD-wp-RGk" eventType="touchUpInside" id="Jd7-6y-taB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH2-iX-g2W">
-                                <rect key="frame" x="120" y="329" width="80" height="230"/>
+                                <rect key="frame" x="136" y="404" width="80" height="80"/>
                                 <state key="normal" title="使う">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,7 +240,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTK-hG-OhZ">
-                                <rect key="frame" x="217" y="329" width="80" height="230"/>
+                                <rect key="frame" x="224" y="404" width="80" height="80"/>
                                 <state key="normal" title="使う">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -262,6 +252,26 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMG-KY-Sq3">
                                 <rect key="frame" x="40" y="72" width="240" height="193"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-ET-DUD">
+                                <rect key="frame" x="27" y="404" width="80" height="80"/>
+                                <state key="normal" title="使う">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonFadeInOut:" destination="qlD-wp-RGk" eventType="touchUpInside" id="Jd7-6y-taB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2y-j6-HmV">
+                                <rect key="frame" x="153" y="342" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="useitem:" destination="qlD-wp-RGk" eventType="touchUpInside" id="fWU-ZJ-nQD"/>
+                                    <segue destination="GnH-TG-hrw" kind="show" identifier="itemsegue" id="O5d-WV-1z9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -271,6 +281,7 @@
                         <outlet property="sampleButton2" destination="DH2-iX-g2W" id="neE-X1-0pR"/>
                         <outlet property="sampleButton3" destination="xTK-hG-OhZ" id="pdD-Qi-bR6"/>
                         <outlet property="sampleImageView" destination="hMG-KY-Sq3" id="BcW-Nj-yex"/>
+                        <outlet property="usebtn" destination="u2y-j6-HmV" id="IKX-nU-sRb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKE-Ty-zKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -533,6 +544,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="USy-Xo-cid"/>
         <segue reference="0u7-kT-zug"/>
-        <segue reference="Rf5-Uu-pYI"/>
+        <segue reference="O5d-WV-1z9"/>
     </inferredMetricsTieBreakers>
 </document>

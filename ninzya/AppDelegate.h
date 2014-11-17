@@ -22,6 +22,8 @@
 
 @property int point;
 @property int time;
+@property int item;
+@property BOOL hiddenitem;
 @property NSMutableArray *nowProject;
 @property NSMutableArray *finishProject;
 

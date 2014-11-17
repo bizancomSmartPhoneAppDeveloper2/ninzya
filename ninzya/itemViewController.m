@@ -7,8 +7,15 @@
 //
 
 #import "itemViewController.h"
-
-@interface itemViewController ()
+#import "AppDelegate.h"
+#import "syokyuViewController.h"
+@interface itemViewController (){
+    AppDelegate *app; //変数管理
+    BOOL item1;
+    BOOL item2;
+    BOOL item3;
+    
+}
 
 @end
 
@@ -17,9 +24,11 @@
 - (void)viewDidLoad
     {
         [super viewDidLoad];
+        app = [[UIApplication sharedApplication] delegate]; //変数管理のデリゲート
         isFadeIn = YES;
         isFadeIn2 = YES;
         isFadeIn3 = YES;
+        self.usebtn.hidden = YES;
         //画像を隠す
         self.sampleImageView.hidden =YES;
     }
@@ -53,12 +62,25 @@
             
             //画像を隠す
             self.sampleImageView.hidden =NO;
+            self.usebtn.hidden = NO;
             
         }else{
             self.sampleImageView.hidden = YES;
+            self.usebtn.hidden = YES;
             [self.sampleButton  setTitle:@"使う" forState:UIControlStateNormal];
         }
     }
+
+- (IBAction)useitem:(id)sender {
+    NSLog(@"アイテム使う");
+    if (item1) {
+        
+    }else if(item2){
+        
+    }else if (item3){
+        
+    }
+}
     
     - (IBAction)buttonFadeInOut2:(id)sender {
          if ([_sampleButton2.titleLabel.text isEqualToString:@"使う"]) {
@@ -82,9 +104,11 @@
             [_sampleButton3 setTitle:@"使う" forState:UIControlStateNormal];
 
         self.sampleImageView.hidden =NO;
+             self.usebtn.hidden = NO;
          }
          else{
              self.sampleImageView.hidden = YES;
+             self.usebtn.hidden = YES;
              [self.sampleButton2  setTitle:@"使う" forState:UIControlStateNormal];
          }
     }
@@ -108,11 +132,28 @@
             [_sampleButton3 setTitle:@"戻る" forState:UIControlStateNormal];
             [_sampleButton2 setTitle:@"使う" forState:UIControlStateNormal];
             [_sampleButton setTitle:@"使う" forState:UIControlStateNormal];
+            self.usebtn.hidden = NO;
         self.sampleImageView.hidden =NO;
         }else{
             self.sampleImageView.hidden = YES;
+            self.usebtn.hidden = YES;
             [self.sampleButton3  setTitle:@"使う" forState:UIControlStateNormal];
         }
     }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"itemsegue"]) {
+        if (item1) {
+            app.point = 3 * app.point;
+        }else if(item2){
+            app.time = app.time - 10;
+            if (app.time < 0) {
+                app.time = 0;
+            }
+        }else if (item3){
+            
+            
+        }
+    }
+}
 @end

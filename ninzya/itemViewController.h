@@ -18,8 +18,11 @@ BOOL isFadeIn3;
 @property (weak, nonatomic) IBOutlet UIButton *sampleButton;
 @property (weak, nonatomic) IBOutlet UIButton *sampleButton2;
 @property (weak, nonatomic) IBOutlet UIButton *sampleButton3;
+@property (weak, nonatomic) IBOutlet UIButton *usebtn;
+
 @property (weak, nonatomic) IBOutlet UIImageView *sampleImageView;
 - (IBAction)buttonFadeInOut:(id)sender;
 
+- (IBAction)useitem:(id)sender;
 
 @end
