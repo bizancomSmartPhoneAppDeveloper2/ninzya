@@ -23,9 +23,12 @@
     int p;
     NSTimer *tm;
     AppDelegate *app; //変数管理
+    NSArray *array;
 }
 
 - (void)viewDidLoad {
+    array = [NSArray arrayWithObjects:@"1",@"1", @"1",@"0",nil];
+    NSString *kekka = [array objectAtIndex:arc4random()%[array count]];
     [super viewDidLoad];
     app = [[UIApplication sharedApplication] delegate]; //変数管理のデリゲート
 
@@ -90,6 +93,14 @@
     // 近接センサ監視解除
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIDeviceProximityStateDidChangeNotification                                                  object:nil];
+    NSString *kekka = [array objectAtIndex:arc4random()%[array count]];
+    if ([kekka isEqualToString:@"1"]) {
+        //成功のとき
+        [self performSegueWithIdentifier:@"sucsesssegue" sender:self];
+    }else{
+        //失敗のとき
+        [self performSegueWithIdentifier:@"failsegue" sender:self];
+    }
 }
 
 -(void)soundstart{
