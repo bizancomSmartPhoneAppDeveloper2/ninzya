@@ -97,11 +97,14 @@
     i++;
     NSLog(@"%d",i);
     self.countLabel.text = [NSString stringWithFormat:@"%d",i];
+    if (i >= 120) {
+        [self performSegueWithIdentifier:@"sucsesssegue" sender:self];
+    }
     [self point];
 }
 -(void)point{
 
-    p = i / 5;
+    p = i / 60;
    NSLog(@"ポイントは%d",p);
    self.countLabel.text = [NSString stringWithFormat:@"%d",p];
         }

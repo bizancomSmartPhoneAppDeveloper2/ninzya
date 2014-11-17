@@ -19,6 +19,7 @@
     BOOL isVibe;
     NSTimer *myTimer;
     int i;
+    int p;
     NSTimer *tm;
 }
 
@@ -98,4 +99,13 @@
     
     self.countLabel.text = [NSString stringWithFormat:@"%d",i];
 }
+-(void)point{
+    
+    p = i / 300;
+    NSLog(@"ポイントは%d",p);
+    self.countLabel.text = [NSString stringWithFormat:@"%d",p];
+}
+
+
+
 @end
