@@ -263,8 +263,18 @@
         [self.mySound stop];
         [tm invalidate];
         NSString *kekka = [array objectAtIndex:arc4random()%[array count]];
+        // 近接センサオフ
         [UIDevice currentDevice].proximityMonitoringEnabled = NO;
-        if ([kekka isEqualToString:@"1"]) {
+        [[NSNotificationCenter defaultCenter]
+         addObserver:self
+         selector:@selector(proximityStateChanged)
+         name:UIDeviceProximityStateDidChangeNotification
+         object:nil];
+        if([UIDevice currentDevice].proximityState == YES)
+        // 近接センサ監視解除
+        [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                        name:UIDeviceProximityStateDidChangeNotification object:nil];
+               if ([kekka isEqualToString:@"1"]) {
             //失敗のとき
             [self performSegueWithIdentifier:@"failsegue" sender:self];
         }else{
@@ -295,7 +305,7 @@
     [UIDevice currentDevice].proximityMonitoringEnabled = NO;
     // 近接センサ監視解除
     [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIDeviceProximityStateDidChangeNotification                                                  object:nil];
+                                                    name:UIDeviceProximityStateDidChangeNotification object:nil];
     
 }
 
